@@ -6,7 +6,7 @@ Configure `/home/qcgg/workspace/ESP-Learning` so Codex can proactively use the E
 
 ## Current Phase
 
-ESP32 Manual Reference Skill Migration Complete
+Root Gitignore Refresh In Progress
 
 ## Phases
 
@@ -28,6 +28,25 @@ ESP32 Manual Reference Skill Migration Complete
 - [x] Keep `doc/ai-esp32-manual-reference.md` as fallback local reference
 - **Status:** complete
 
+### Phase 4: ESP32-S3 DMA Manual Research
+- [x] Check local tool availability for processed manual access
+- [x] Inspect ESP32-S3 TRM GDMA chapter and System/Memory DMA address-space notes
+- [x] Cross-check DMA-capable peripheral constraints and final explanation
+- **Status:** complete
+
+### Phase 5: Refresh Repository Entry Docs
+- [x] Review current `AGENTS.md` and `README.md`
+- [x] Separate human-facing and Codex-facing responsibilities
+- [x] Tighten both files while keeping them brief
+- **Status:** complete
+
+### Phase 6: Refresh Root Gitignore And Publish Current Docs
+- [ ] Replace overly broad root `.gitignore` rules with repository-appropriate patterns
+- [ ] Verify ignored vs visible files after the new rules
+- [ ] Commit current tracked doc/planning updates and root ignore rules
+- [ ] Push current commit to `origin/main`
+- **Status:** in_progress
+
 ## Decisions Made
 
 | Decision | Rationale |
@@ -37,6 +56,7 @@ ESP32 Manual Reference Skill Migration Complete
 | Keep a human-readable reference document in `doc/` | Developers can inspect and update the paths/workflow without reading all agent instructions |
 | Require original PDF cross-check for hardware-critical facts | Converted artifacts are useful but not authoritative |
 | Put the detailed lookup workflow in a Codex skill instead of `AGENTS.md` | Skills can be triggered by task wording and avoid making per-repository `AGENTS.md` files increasingly large |
+| Replace root `.gitignore` pattern `.*` with explicit local/build/editor rules | `.*` is too broad, hides potentially useful project files, and is not maintainable |
 
 ## Current ESP32-S3 References
 
@@ -44,3 +64,10 @@ ESP32 Manual Reference Skill Migration Complete
 - TRM processed root: `/home/qcgg/workspace/convert-pdf/manuals/processed/esp32-s3-technical-reference-manual-en`
 - Codex skill: `/home/qcgg/.codex/skills/esp32-manual-reference/SKILL.md`
 - Reference workflow: `doc/ai-esp32-manual-reference.md`
+
+## Current Research Scope
+
+- Topic: ESP32-S3 DMA/GDMA architecture, addressing, routing, and software implications.
+- Manual roots:
+  - `/home/qcgg/workspace/convert-pdf/manuals/processed/esp32-s3-datasheet-en`
+  - `/home/qcgg/workspace/convert-pdf/manuals/processed/esp32-s3-technical-reference-manual-en`
