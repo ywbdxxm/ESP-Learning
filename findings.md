@@ -57,3 +57,18 @@ This keeps:
 - ESP-Learning focused on firmware learning and ESP-IDF code
 
 Future Codex sessions should use `AGENTS.md` and `doc/ai-esp32-manual-reference.md` to find and query the processed manual artifacts.
+
+## Skill Migration
+
+The detailed ESP32-S3 manual lookup workflow now lives in:
+
+- `/home/qcgg/.codex/skills/esp32-manual-reference/SKILL.md`
+
+Reason:
+
+- It is reusable across ESP32 projects.
+- It can be triggered by ESP32/ESP-IDF/register/peripheral task wording.
+- It avoids making `AGENTS.md` increasingly large.
+- `ESP-Learning/AGENTS.md` should stay as a thin pointer to the skill plus project-specific code editing rules.
+
+`doc/ai-esp32-manual-reference.md` remains as a local fallback reference for humans or sessions where the skill is unavailable.

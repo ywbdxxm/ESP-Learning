@@ -8,7 +8,8 @@ This repository is configured so Codex can proactively use the processed ESP32-S
 
 Start here:
 
-- [AI ESP32-S3 Manual Reference Workflow](doc/ai-esp32-manual-reference.md)
+- Codex skill: `esp32-manual-reference`
+- [AI ESP32-S3 Manual Reference fallback](doc/ai-esp32-manual-reference.md)
 - [Repository guidance for Codex](AGENTS.md)
 
 Canonical processed manuals:

@@ -6,7 +6,7 @@ Configure `/home/qcgg/workspace/ESP-Learning` so Codex can proactively use the E
 
 ## Current Phase
 
-Manual Reference Setup Complete
+ESP32 Manual Reference Skill Migration Complete
 
 ## Phases
 
@@ -22,6 +22,12 @@ Manual Reference Setup Complete
 - [x] Update `README.md` as a short entry point
 - **Status:** complete
 
+### Phase 3: Move Manual Lookup Rules Into Codex Skill
+- [x] Create `~/.codex/skills/esp32-manual-reference/SKILL.md`
+- [x] Slim root `AGENTS.md` to reference the skill instead of duplicating the full workflow
+- [x] Keep `doc/ai-esp32-manual-reference.md` as fallback local reference
+- **Status:** complete
+
 ## Decisions Made
 
 | Decision | Rationale |
@@ -30,9 +36,11 @@ Manual Reference Setup Complete
 | Use root `AGENTS.md` for future Codex behavior | Codex can automatically read repository guidance when working in this directory |
 | Keep a human-readable reference document in `doc/` | Developers can inspect and update the paths/workflow without reading all agent instructions |
 | Require original PDF cross-check for hardware-critical facts | Converted artifacts are useful but not authoritative |
+| Put the detailed lookup workflow in a Codex skill instead of `AGENTS.md` | Skills can be triggered by task wording and avoid making per-repository `AGENTS.md` files increasingly large |
 
 ## Current ESP32-S3 References
 
 - Datasheet processed root: `/home/qcgg/workspace/convert-pdf/manuals/processed/esp32-s3-datasheet-en`
 - TRM processed root: `/home/qcgg/workspace/convert-pdf/manuals/processed/esp32-s3-technical-reference-manual-en`
+- Codex skill: `/home/qcgg/.codex/skills/esp32-manual-reference/SKILL.md`
 - Reference workflow: `doc/ai-esp32-manual-reference.md`
