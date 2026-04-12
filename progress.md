@@ -29,3 +29,5 @@
 - Confirmed current branch is `main` and remote is `origin git@github.com:ywbdxxm/ESP-Learning.git`.
 - Replaced root `.gitignore` with explicit OS/editor/cache/build/ESP-IDF ignore rules.
 - Verified ignore behavior with `git status --short --ignored`; local dot-configs and build outputs are ignored while project content remains visible.
+- Committed current tracked doc/planning updates and root `.gitignore` as `99dbd55 docs: refresh repo docs and root gitignore`.
+- Pushed commit `99dbd55` to `origin/main`.

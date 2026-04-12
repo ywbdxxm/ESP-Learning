@@ -6,7 +6,7 @@ Configure `/home/qcgg/workspace/ESP-Learning` so Codex can proactively use the E
 
 ## Current Phase
 
-Root Gitignore Refresh In Progress
+Root Gitignore Refresh Complete
 
 ## Phases
 
@@ -41,11 +41,11 @@ Root Gitignore Refresh In Progress
 - **Status:** complete
 
 ### Phase 6: Refresh Root Gitignore And Publish Current Docs
-- [ ] Replace overly broad root `.gitignore` rules with repository-appropriate patterns
-- [ ] Verify ignored vs visible files after the new rules
-- [ ] Commit current tracked doc/planning updates and root ignore rules
-- [ ] Push current commit to `origin/main`
-- **Status:** in_progress
+- [x] Replace overly broad root `.gitignore` rules with repository-appropriate patterns
+- [x] Verify ignored vs visible files after the new rules
+- [x] Commit current tracked doc/planning updates and root ignore rules
+- [x] Push current commit to `origin/main`
+- **Status:** complete
 
 ## Decisions Made
 
