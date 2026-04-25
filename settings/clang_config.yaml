@@ -1,0 +1,8 @@
+CompileFlags:
+  Remove:
+    - "-fno-tree-switch-conversion"
+    - "-mlongcalls"
+    - "-fstrict-volatile-bitfields"
+    - "-Wno-frame-address"
+    - "-mdisable-hardware-atomics"
+    - "-fno-shrink-wrap"

@@ -1,0 +1,44 @@
+{
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "C_Cpp.errorSquiggles": "disabled",
+    "C_Cpp.autocomplete": "disabled",
+    "cmake.configureOnOpen": false,
+    
+    // 【核心】直接钉死使用最新版的乐鑫特供 clangd 解析引擎
+    "clangd.path": "/home/qcgg/.espressif/tools/esp-clang/esp-20.1.1_20250829/esp-clang/bin/clangd",
+
+    // 启动参数保持不变，它会自动去读取你当前 IDF 版本生成的图纸
+    "clangd.arguments": [
+        "--log=verbose",
+        "--pretty",
+        "--background-index",
+        "--all-scopes-completion",
+        "--completion-style=detailed",
+        "--header-insertion=iwyu",
+        "--pch-storage=memory",
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--query-driver=**/*gcc*,**/*g++*"
+    ],
+
+    // Python / AI workstation settings that depend on remote-host paths.
+    "python.condaPath": "/home/qcgg/.local/bin/micromamba",
+    "python.defaultInterpreterPath": "/home/qcgg/.mamba/envs/ai-base-cu124-stable/bin/python",
+    "python-envs.alwaysUseUv": false,
+    "python-envs.globalSearchPaths": [
+        "/home/qcgg/.mamba/envs"
+    ],
+    "python-envs.terminal.autoActivationType": "off",
+
+    // Keep terminals explicit; shared base is the fallback, project .venv stays opt-in.
+    "python.terminal.activateEnvironment": false,
+
+    // Pylance should catch obvious issues without forcing strict typing on every repo.
+    "python.analysis.typeCheckingMode": "basic",
+
+    // Use Ruff's bundled native server for formatting/linting without mutating the shared base.
+    "ruff.nativeServer": "on",
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true
+    }
+}
